@@ -49,6 +49,8 @@
             background-size: cover;
             text-align: center;
             padding: 100px 0;
+            position: relative;
+            overflow: hidden;
         }
 
         #hero h1 {
@@ -69,6 +71,17 @@
             text-decoration: none;
             font-weight: bold;
             border-radius: 5px;
+        }
+
+        /* Shape Styles */
+        .circle {
+            position: absolute;
+            background-color: #333;
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            top: -100px;
+            right: -100px;
         }
 
         /* About Section Styles */
@@ -155,6 +168,7 @@
 
     <!-- Hero Section -->
     <section id="hero">
+        <div class="circle"></div>
         <h1>Welcome to Our Ad Blocker & Content Filter</h1>
         <p>Protect your family online with our powerful device.</p>
         <a href="#get-started" class="cta-button">Get Started</a>
