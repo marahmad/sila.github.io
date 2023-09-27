@@ -43,50 +43,35 @@
             text-decoration: none;
         }
 
-        /* Hero Section Styles */
-        #hero {
-            background-image: url('https://via.placeholder.com/1600x600');
-            background-size: cover;
-            text-align: center;
-            padding: 100px 0;
-            position: relative;
-            overflow: hidden;
+        /* Categorized Sections Styles */
+        .category {
+            background-color: #333;
+            color: #fff;
+            padding: 50px 0;
         }
 
-        #hero h1 {
-            font-size: 36px;
+        .category h2 {
+            font-size: 24px;
             margin-bottom: 20px;
         }
 
-        #hero p {
-            font-size: 18px;
-            margin-bottom: 30px;
+        .category-images {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
         }
 
-        .cta-button {
-            display: inline-block;
-            padding: 15px 30px;
-            background-color: #333;
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
-        }
-
-        /* Shape Styles */
-        .circle {
-            position: absolute;
-            background-color: #333;
-            border-radius: 50%;
-            width: 200px;
-            height: 200px;
-            top: -100px;
-            right: -100px;
+        .category-images img {
+            max-width: 200px;
+            border: 2px solid #fff;
+            border-radius: 10px;
         }
 
         /* About Section Styles */
         #about {
-            background-color: #fff;
+            background-color: #f5f5f5;
             padding: 50px 0;
         }
 
@@ -102,7 +87,7 @@
 
         /* Features Section Styles */
         #features {
-            background-color: #f5f5f5;
+            background-color: #fff;
             padding: 50px 0;
         }
 
@@ -123,7 +108,7 @@
 
         /* Pricing Section Styles */
         #pricing {
-            background-color: #fff;
+            background-color: #f5f5f5;
             padding: 50px 0;
         }
 
@@ -166,12 +151,24 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section id="hero">
-        <div class="circle"></div>
-        <h1>Welcome to Our Ad Blocker & Content Filter</h1>
-        <p>Protect your family online with our powerful device.</p>
-        <a href="#get-started" class="cta-button">Get Started</a>
+    <!-- Category: Power Adapters -->
+    <section class="category" id="power-adapters">
+        <h2>Power Adapters</h2>
+        <div class="category-images">
+            <img src="https://via.placeholder.com/200x200" alt="Power Adapter 1">
+            <img src="https://via.placeholder.com/200x200" alt="Power Adapter 2">
+            <img src="https://via.placeholder.com/200x200" alt="Power Adapter 3">
+        </div>
+    </section>
+
+    <!-- Category: Ethernet Cables -->
+    <section class="category" id="ethernet-cables">
+        <h2>Ethernet Cables</h2>
+        <div class="category-images">
+            <img src="https://via.placeholder.com/200x200" alt="Ethernet Cable 1">
+            <img src="https://via.placeholder.com/200x200" alt="Ethernet Cable 2">
+            <img src="https://via.placeholder.com/200x200" alt="Ethernet Cable 3">
+        </div>
     </section>
 
     <!-- About Section -->
